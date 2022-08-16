@@ -19,7 +19,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"codeLeague\":\"ELC\"\n}\n",
+					"raw": "{\n    \"codeLeague\":\"CL\"\n}\n",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -136,7 +136,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"nameTeam\":\"Blackburn Rovers FC\",\n    \"players\":\"\"\n}",
+					"raw": "{\n    \"nameTeam\":\"AS Monaco FC\",\n    \"players\":true\n}",
 					"options": {
 						"raw": {
 							"language": "json"

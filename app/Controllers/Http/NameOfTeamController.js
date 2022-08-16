@@ -41,7 +41,7 @@ class NameOfTeamController {
     }
 
     if (responseTeam != '') {
-      if (nameTeam.players != null) {
+      if (nameTeam.players != false) {
         QueryPlayers = await Database.table('players').where('team_id', '=', responseTeam.id).select('*')
         responsePlayers = {
           'teams': QueryPlayers
