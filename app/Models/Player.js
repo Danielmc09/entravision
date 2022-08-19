@@ -4,8 +4,12 @@
 const Model = use('Model')
 
 class Player extends Model {
-  team(){
+  team() {
     return this.belongsTo('App/Models/Team')
+  }
+
+  history() {
+    return this.hasMany('App/Models/HistoryPlayerTeam')
   }
 }
 

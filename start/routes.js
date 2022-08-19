@@ -29,13 +29,10 @@ Route.group(()=>{
   Route.get('/team', 'NameOfTeamController.index')
   Route.get('/league', 'LeagueController.index')
   Route.get('/leagueforname', 'LeaguesForNameController.index')
+  Route.get('/updatePlayer', 'UpdatePlayerController.index')
 }).prefix('api/v1');
 
 /* A group of routes that are not defined. */
 Route.group(()=>{
-  Route.post('*', () => {return { 'Fallo': 'La ruta no existe' }})
-  Route.get('*', () => {return { 'Fallo': 'La ruta no existe' }})
-  Route.put('*', () => {return { 'Fallo': 'La ruta no existe' }})
-  Route.patch('*', () => {return { 'Fallo': 'La ruta no existe' }})
-  Route.delete('*', () => {return { 'Fallo': 'La ruta no existe' }})
+  Route.any('*', () => {return { 'Fallo': 'La ruta no existe' }})
 })
